@@ -6,6 +6,6 @@
   "author": "Noxy",
   "contact": "donotcontactme@example.com",
   "homepage": "https://mods.factorio.com/",
-  "description": "Increases robot battery capacity.",
+  "description": "Allows you to tweak the robot battery capacity.",
   "dependencies": ["base >= 0.16.0"]
 }
