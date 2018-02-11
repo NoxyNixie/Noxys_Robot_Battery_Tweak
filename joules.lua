@@ -38,6 +38,7 @@ function joules.nearest(j)
 			return joules.to(j, v)
 		end
 	end
+	return j
 end
 
 return joules
