@@ -16,7 +16,8 @@ local joules = {
 		E  = 1E18,
 		Z  = 1E21,
 		Y  = 1E24,
-	}
+	},
+	order = {"Y", "Z", "E", "P", "T", "G", "M", "k", "m", "u", "n", "p", "f", "a", "z", "y"}
 }
 
 function joules.from(j)
@@ -29,6 +30,14 @@ end
 function joules.to(j, unit)
 	if not joules.units[unit] then return j end
 	return j / joules.units[unit] .. unit .. "J"
+end
+
+function joules.nearest(j)
+	for _, v in ipairs(joules.order) do
+		if j >= joules.units[v] then
+			return joules.to(j, v)
+		end
+	end
 end
 
 return joules
