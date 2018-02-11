@@ -1,0 +1,11 @@
+{
+  "name": "Noxys_Robot_Battery_Tweak",
+  "version": "0.0.1",
+  "factorio_version": "0.16",
+  "title": "Noxys Robot Battery Tweak",
+  "author": "Noxy",
+  "contact": "donotcontactme@example.com",
+  "homepage": "https://mods.factorio.com/",
+  "description": "Increases robot battery capacity.",
+  "dependencies": ["base >= 0.16.0"]
+}
